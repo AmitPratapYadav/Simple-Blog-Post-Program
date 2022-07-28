@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Learning</title>
+</head>
+<body>
+   <!--A Simple Blog Post -->
+   <input type="text" id="input1">
+   <input type="text" id="input2">
+   <textarea name="maincontent" id="contentint" cols="30" rows="10"></textarea>
+   <button id="btn" onclick="addPost()">Add</button> 
+  
+   <h1 id="heading"></h1>
+   <h3 id="author"></h3>
+   <h4 id="date"></h4>
+   <p id="MainContent"></p>
+   <h2>Your Content is ready to deploy</h2>
+</body>
+<script>
+function addPost(){
+
+    let heading = document.getElementById("input1").value;
+    let author = document.getElementById("input2").value;
+    let content = document.getElementById("contentint").value;
+    
+
+    let x =document.getElementById("heading");
+     
+    x.innerHTML=heading;
+
+    let y =document.getElementById("author");
+
+    y.innerHTML=author;
+
+    let a =document.getElementById("date");
+
+    a.innerHTML= new Date();
+
+    let b =document.getElementById("MainContent");
+
+    b.innerHTML=content;
+   
+   
+   
+   
+   
+    console.log("Post Added Recently");
+
+    
+
+  
+    
+}
+
+
+</script>
+</html>
